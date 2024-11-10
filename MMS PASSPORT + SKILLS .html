@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMS PASSPORT</title>
+</head>
+<style type="text/css">
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 500px;
+  height: 660px;
+  background-color: rgb(4, 49, 28);
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+  padding: 10px;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-90deg);
+  -ms-transform: rotatey(-90deg);
+  transform: rotatey(-90deg);
+}
+
+.iimg {
+    width: 520px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
+/*-------skilss------*/
+.conttainer {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.conttainer .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-box .title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(4, 49, 28);
+}
+
+.skill-box .skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: #ffffff;
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: rgb(253,34,29);
+ background: linear-gradient(90deg, rgba(253,34,29,1) 26%, rgba(253,136,29,1) 53%, rgba(253,166,29,1) 77%, rgba(243,253,48,1) 100%, rgba(252,176,69,1) 100%);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-per.html {
+  width: 95%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.css {
+     
+  width: 80%;
+  animation-delay: 0.1s;
+}
+.skill-per.bootstrap {
+    
+  width: 60%;
+  animation-delay: 0.1s;
+}
+.skill-per.javascript {
+       
+  width: 50%;
+  animation-delay: 0.2s;
+}
+.skill-per.Wordpress {
+    
+  width: 75%;
+  animation-delay: 0.1s;
+}
+.skill-per.Wix {
+    
+  width: 65%;
+  animation-delay: 0.1s;
+}
+.skill-per.Weebly {
+     
+  width: 95%;
+  animation-delay: 0.1s;
+}
+.skill-per.Shopify {
+       
+  width: 40%;
+  animation-delay: 0.3s;
+}
+.skill-per.LOGO-DESIGN{
+       
+       width: 95%;
+       animation-delay: 0.3s;
+}
+.skill-per.Reactjs {
+       
+       width: 10%;
+       animation-delay: 0.3s;
+}
+.skill-per.Nodejs {
+       
+       width: 7%;
+       animation-delay: 0.3s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: rgb(4, 49, 28);
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: rgb(4, 49, 28);
+  transform: translateX(-50%) rotate(45deg);
+}
+.colwhi{
+    color: white;
+}
+</style>
+<body>
+    <div class="book">
+        <div class="conttainer">
+            <div class="skill-box">
+                <span class="title">HTML5</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per html">
+                        <span class="tooltip">95%</span>
+                    </span>
+                </div>
+            </div>
+    
+            <div class="skill-box">
+                <span class="title">CSS3</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per css">
+                        <span class="tooltip">80%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">Bootstrap</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per bootstrap">
+                        <span class="tooltip">60%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">JavaScript</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per javascript">
+                        <span class="tooltip">50%</span>
+                    </span>
+                </div>
+            </div>
+             
+            <div class="skill-box">
+                <span class="title">Wordpress</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per Wordpress">
+                        <span class="tooltip">75%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">Wix</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per Wix">
+                        <span class="tooltip">65%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">Weebly</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per Weebly">
+                        <span class="tooltip">95%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">Shopify</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per Shopify">
+                        <span class="tooltip">40%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">LOGO DESIGN</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per LOGO-DESIGN">
+                        <span class="tooltip">95%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">Reactjs</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per Reactjs">
+                        <span class="tooltip">10%</span>
+                    </span>
+                </div>
+            </div>
+            <div class="skill-box">
+                <span class="title">Nodejs</span>
+    
+                <div class="skill-bar">
+                    <span class="skill-per Nodejs">
+                        <span class="tooltip">7%</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="cover">
+            <img class="iimg" src="https://i.pinimg.com/474x/22/68/ca/2268cad9423a473a6158319106438c07.jpg" alt="MMS CUSTOM PASSPORT">       
+        </div>
+    </div>
+    
+</body>
+</html>
