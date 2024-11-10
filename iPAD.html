@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPAD</title>
+</head>
+<style type="text/css">
+.carrd {
+    margin-left: 20px;
+    margin-bottom: 30px;
+  width: 500px;
+  height: 700px;
+  background: black;
+  border-radius: 35px;
+  border: 2px solid rgb(40, 40, 40);
+  padding: 5px;
+  position: relative;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.486);
+}
+
+.carrd-innt {
+  background-image: linear-gradient(to right bottom, #ff0000, #ff0045, #ff0078, #ea00aa, #b81cd7, #8a3ad6, #5746cf, #004ac2, #003d94, #002e66, #001d3a, #020812);
+  background-size: 200% 200%;
+  background-position: 0% 0%;
+  height: 100%;
+  border-radius: 35px;
+  transition: all 0.6s ease-out;
+  overflow: hidden;
+}
+
+.carrd:hover .carrd-int {
+  background-position: 100% 100%;
+}
+
+.toop {
+  position: absolute;
+  top: 0px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  width: 35%;
+  height: 18px;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.speakeer {
+  position: absolute;
+  top: 2px;
+  right: 50%;
+  transform: translate(50%, 0%);
+  width: 40%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgb(20, 20, 20);
+}
+
+.camerra {
+  position: absolute;
+  top: 6px;
+  right: 84%;
+  transform: translate(50%, 0%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.048);
+}
+
+.innt {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: rgba(0, 0, 255, 0.212);
+}
+
+.btnn1, .btnn2, .btnn3, .btnn4 {
+  position: absolute;
+  width: 2px;
+}
+
+.btnn1, .btnn2, .btnn3 {
+  height: 45px;
+  top: 30%;
+  right: -4px;
+  background-image: linear-gradient(to right, #111111, #222222, #333333, #464646, #595959);
+}
+
+.btnn2, .btnn3 {
+  transform: scale(-1);
+  left: -4px;
+}
+
+.btnn2, .btnn3 {
+  transform: scale(-1);
+  height: 30px;
+}
+
+.btnn2 {
+  top: 26%
+}
+
+.btnn3 {
+  top: 36%
+}
+
+.helllo {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 35px;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.hiddeen {
+  display: block;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  width: 504px;
+  height: 700px;
+  border-radius: 35px;
+}
+
+.carrd:hover .hiddeen {
+  opacity: 1;
+}
+
+.carrd:hover .helllo {
+  transform: translateY(-20px);
+}
+
+.ifff{
+    width: 500px;
+  height: 704px;
+  border-radius: 35px;
+}
+
+</style>
+<body>
+
+<div class="carrd">
+  
+  <div class="btnn1"></div>
+  <div class="btnn2"></div>
+  <div class="btnn3"></div>
+  <div class="btnn4"></div>
+  <div class="carrd-innt">
+    <div class="helllo">
+        <center>
+            <span class="helllo">MMS</span>
+        </center>
+      <span class="hiddeen">       
+        <iframe class="ifff" src="https://assets.pinterest.com/ext/embed.html?id=886435139150688906" frameborder="0" scrolling="no" ></iframe>
+      </span>
+    </div>
+  </div>
+  <div class="toop">
+    <div class="camerra">
+      <div class="innt"></div>
+    </div>
+    <div class="speakeer"></div>
+  </div>
+</div>
+
+</body>
+</html>
